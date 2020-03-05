@@ -1,112 +1,85 @@
 <!DOCTYPE html>
 <html>
-<title>Harsha Vardhan</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-<body class="w3-light-grey">
+<body class="w3-black">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Harsha Vardhan Guda.</h1>
+    <p>Robotics Enthusiast</p>
+    <img src="images/harsha_new.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Harsha Vardhan</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I like to be called "Roboticist", is that a real word? Well yes. 
+        <!-- I have worked on projects involving the fields of Signal -->
+      <!-- Processing, Image Processing and Machine Learning. I sometimes give up on sleep just to answer some questions which are 
+      struck during my projects.   -->
+      I love Hyderabadi Biryani.</p>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> <a href = "downloads/harshavardhan_resume.pdf">Download Resume</a>
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <div class="w3-padding-64 w3-content" id="projects">
+      <h2 class="w3-text-light-grey">My Projects</h2>
+      <hr style="width:200px" class="w3-opacity">
   
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="images/harsha_new.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2 style="color:white">Harsha Vardhan Guda</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Member, RIG NITC</p>
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Programme Manager, RIG NITC(May 2018 - April 2019)</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>NIT Calicut, India</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="mailto:harshavardhan.guda@gmail.com" target="_top">harshavardhan.guda@gmail.com</a></p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+919177881640</p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Python</p>
-<!--           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div> -->
-          <p>AVR, ARM Assembly Languange</p>
-<!--           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
-            </div>
-          </div> -->
-          <p>Keras, OpenCV</p>
-<!--           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div> -->
-          <p>Robot Operating System</p>
-<!--           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div> -->
-          <br>
-
-          <p class="w3-large"><b><i class="fa fa-book fa-fw w3-margin-right w3-text-teal"></i>Education</b></p>
-          <a href="http://www.nitc.ac.in/"><h5><b>National Institute of Technology Calicut, India.</b></h5></a>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2016 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Bachelor of Technology. CGPA: 8.30 </p>
-          <hr>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English</p>
-<!--           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div> -->
-          <p>Telugu</p>
-<!--           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
-          </div> -->
-          <p>Hindi</p>
-<!--           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div> -->
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        
-        
-        <a href ="https://harshavardhanguda.github.io/downloads/harshavardhan_resume.pdf"><span class="w3-tag w3-blue w3-round"  >My Resume</span></a>
-        <a href ="https://github.com/harshavardhanguda"><span class="w3-tag w3-blue w3-round" >GitHub Repositories</span></a>
-        <a href ="index.html#tutorials"><span class="w3-tag w3-blue w3-round" >Tutorials</span></a>
-        <a href ="index.html#gallery"><span class="w3-tag w3-blue w3-round" >Gallery</span></a>
-        <a href="trips/trips.html"><span class = "w3-tag w3-blue w3-round">Trips</span></a>
-        <a href="night_tales/night_tales.html"><span class = "w3-tag w3-blue w3-round">Tales</span></a>
-        <a href="index_new.html"><span class = "w3-tag w3-blue w3-round">New Website</span></a>
-
-        <p>I like to be called "Roboticist", is that a real word? Well yes. 
-          <!-- I have worked on projects involving the fields of Signal -->
-        <!-- Processing, Image Processing and Machine Learning. I sometimes give up on sleep just to answer some questions which are 
-        struck during my projects.   -->
-        I love Hyderabadi Biryani.</p>
-
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Drone Based Intelligent Surveillance And Disaster Management System</b></h5>
+    <h5 class="w3-padding-16 w3-text-light-grey"><b>Drone Based Intelligent Surveillance And Disaster Management System</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Design of an autonomous Unmanned Aerial Vehicle(UAV) system to detect people in distress and send the information of
+          <p class="w3-padding-16 w3-text-light-grey">Design of an autonomous Unmanned Aerial Vehicle(UAV) system to detect people in distress and send the information of
             the people to an already established ground control station(GCS). It consists of a long range communication system to
             communicate with GCS and a system to perform computer vision, avoid obstacles and navigate autonomously and plan its 
             path accordingly. Further it can be used to build a swarm of such systems to cover a wider area and effectively help 
@@ -119,89 +92,83 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             </video>
             </p>
 
-          <hr>
-        </div>
-      
-        <!-- <div class="w3-container">
-          <h5 class="w3-opacity"><b>Autonomous Navigation of Four Wheeled Base using Passive Encoders</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Navigation of a four wheeled base using passive encoders to achieve precise indoor location of robot and implement 
-            control loops for its navigation. Mathematically model the system and validate from the experimental data.</p>
-          <hr>
-        </div> -->
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Interactive Robot for Reception and Medical Care (Project RIGGU)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>RIGGU is a Semi Humanoid Interactive bot which is developed for different applications such as hospitality, treating
-            autism, assisting aged people, etc. Semi-Humanoid robots are being widely used in applications ranging from household
-            to commercial purposes. This paper discusses about development of a semi-humanoid robot platform for speech and image
-            recognition, navigation based on Robot Operating System (ROS) which allows the users to interface the robot developed
-            to add) extra peripherals which further gives the scope for development. RIGGU is integrated with features such as 
-            speech recognition and synthesis, facial and object recognition and navigation. For  <a href="https://github.com/harshavardhanguda/rigguv2"><font color="blue">code</font></a> 
-            , paper Springer <a href="https://doi.org/10.1007/978-981-15-3914-5_3" style="color: blue;">link.</a>
-            <!--             <a href="https://drive.google.com/open?id=1vHjzMZ-WHZ1U1Jf-alBCXW7l6LPH4T6j">  -->
-<!--               <font color="blue">paper</font> </a> </p> -->
-          <br>
-        <br>
-        <p style="text-align:center">
-            <iframe src="https://www.youtube.com/embed/rJtpveWpm8U" style="width: 50%;"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen, body="text-align:center"></iframe>
-        </p>
-            <hr>
-        </div>
-        
-          <div class="w3-container">
-          <h5 class="w3-opacity"><b>Sign Language to Text Conversion using Deep Neural Networks</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>December 2018 - April 2019</h6>
-          <p>The exchange of information performed in different ways such as speech, signals, or writing is called communication.
-            Communication in deaf and mute is performed with the use of sign languages, however, they face many difficulties at 
-            the time of interacting with the common man and computers. Research is needed in this field to bring deaf-mutes more 
-            into the light of society and to increase their interaction with the common man. Our project aims at developing a 
-            system that uses Convolutional Neural Networks(CNN) and Faster R-CNN to extract the patterns in the feature vectors 
-            of each sign of twenty-six alphabets and further uses the results to recognize those signs. A standalone device is 
-            developed by implementing the pre-trained modified VGGNet models on  Pi 3 A+ device. 
-            For  <a href="https://github.com/harshavardhanguda/stisl"><font color="blue">code</font></a> 
-<!--             <a href="https://drive.google.com/open?id=1pBqbFqW3LJCH9vb8CIQ1wIB37hl6sOKi"><font color="blue">paper</font></a> -->
-           </p>
-          <hr>
-        </div>
-         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Manual Robot for Robocon - 2018</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2017 - March 2017</span></h6>
-          <p>Algorithm for motion of manual robot (four wheeled) to acheive the task of handingover shuttlecock to autonomous robot.
-            Coding of AVR Microcontrollers for control ofrobot and design of power modules. 
-            Implemented algorithms to recognise shuttlecocks based on location and produce appropriate signals to throw it in required 
-            tragectory. </p>
-          <hr>
-          <img src="images/robocon18.jpg" style="width:100%" alt="robocon18">
-          <p body="text-align:center">Team RoboCon 2018, <a href="https://goo.gl/maps/2u2WMSQC7hirCwScA">Balewadi Stadium, Pune</a></p>
-        </div>
-         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Design and Fabrication of an  8-bit flight controller</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 -- July 2017</span></h6>
-          <p>Designed a flight controller using ATMega 328p microcontroller chip. Implemented closed loop PID control
-            for the stable flight of quadcopter</p>
-          <hr>
-        </div>
-        
-      </div>
+            <div class="w3-container">
+              <h5 class="w3-padding-16 w3-text-light-grey"><b>Interactive Robot for Reception and Medical Care (Project RIGGU)</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+              <p class="w3-padding-16 w3-text-light-grey">RIGGU is a Semi Humanoid Interactive bot which is developed for different applications such as hospitality, treating
+                autism, assisting aged people, etc. Semi-Humanoid robots are being widely used in applications ranging from household
+                to commercial purposes. This paper discusses about development of a semi-humanoid robot platform for speech and image
+                recognition, navigation based on Robot Operating System (ROS) which allows the users to interface the robot developed
+                to add) extra peripherals which further gives the scope for development. RIGGU is integrated with features such as 
+                speech recognition and synthesis, facial and object recognition and navigation. For  <a href="https://github.com/harshavardhanguda/rigguv2"><font color="blue">code</font></a> 
+                , paper Springer <a href="https://doi.org/10.1007/978-981-15-3914-5_3" style="color: blue;">link.</a>
+                <!--             <a href="https://drive.google.com/open?id=1vHjzMZ-WHZ1U1Jf-alBCXW7l6LPH4T6j">  -->
+    <!--               <font color="blue">paper</font> </a> </p> -->
+              <br>
+            <br>
+            <p style="text-align:center">
+                <iframe src="https://www.youtube.com/embed/rJtpveWpm8U" style="width: 50%;"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen, body="text-align:center"></iframe>
+            </p>
+                <hr>
+            </div>
+            
+              <div class="w3-container">
+              <h5 class="w3-padding-16 w3-text-light-grey"><b>Sign Language to Text Conversion using Deep Neural Networks</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>December 2018 - April 2019</h6>
+              <p class="w3-padding-16 w3-text-light-grey">The exchange of information performed in different ways such as speech, signals, or writing is called communication.
+                Communication in deaf and mute is performed with the use of sign languages, however, they face many difficulties at 
+                the time of interacting with the common man and computers. Research is needed in this field to bring deaf-mutes more 
+                into the light of society and to increase their interaction with the common man. Our project aims at developing a 
+                system that uses Convolutional Neural Networks(CNN) and Faster R-CNN to extract the patterns in the feature vectors 
+                of each sign of twenty-six alphabets and further uses the results to recognize those signs. A standalone device is 
+                developed by implementing the pre-trained modified VGGNet models on  Pi 3 A+ device. 
+                For  <a href="https://github.com/harshavardhanguda/stisl"><font color="blue">code</font></a> 
+    <!--             <a href="https://drive.google.com/open?id=1pBqbFqW3LJCH9vb8CIQ1wIB37hl6sOKi"><font color="blue">paper</font></a> -->
+               </p>
+              <hr>
+            </div>
+             <div class="w3-container">
+              <h5 class="w3-padding-16 w3-text-light-grey"><b>Manual Robot for Robocon - 2018</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2017 - March 2017</span></h6>
+              <p class="w3-padding-16 w3-text-light-grey">Algorithm for motion of manual robot (four wheeled) to acheive the task of handingover shuttlecock to autonomous robot.
+                Coding of AVR Microcontrollers for control ofrobot and design of power modules. 
+                Implemented algorithms to recognise shuttlecocks based on location and produce appropriate signals to throw it in required 
+                tragectory. </p>
+              <hr>
+              <img src="images/robocon18.jpg" style="width:100%" alt="robocon18">
+              <p body="text-align:center">Team RoboCon 2018, <a href="https://goo.gl/maps/2u2WMSQC7hirCwScA">Balewadi Stadium, Pune</a></p>
+            </div>
+             <div class="w3-container">
+              <h5 class="w3-padding-16 w3-text-light-grey"><b>Design and Fabrication of an  8-bit flight controller</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 -- July 2017</span></h6>
+              <p class="w3-padding-16 w3-text-light-grey">Designed a flight controller using ATMega 328p microcontroller chip. Implemented closed loop PID control
+                for the stable flight of quadcopter</p>
+              <hr>
+            </div>
+  </div>
 
-      <div id = 'tutorials' class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Tutorials</h2>
-        <a href="http://www.rignitc.com/install-cuda-10-with-ubuntu-16-04/", style="color:blue">Install CUDA 10 on Ubuntu 16.04</a>
+  <div class="w3-padding-64 w3-content" id="gallery">
+    <h2 class="w3-text-light-grey">Tutorials</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <h5 class="w3-padding-16 w3-text-light-grey"><a href="http://www.rignitc.com/install-cuda-10-with-ubuntu-16-04/", style="color:blue" >Install CUDA 10 on Ubuntu 16.04</a></h5>
       <br>
-      CUDA is NVIDIA’s parallel computing architecture that enables dramatic increases in computing performance by harnessing the 
-      power of the GPU.This tutorial explains the installation of CUDA 10 in ubuntu 16.04.
-      <a href="http://www.rignitc.com/install-cuda-10-with-ubuntu-16-04/"style="color:blue">Read more.</a>
+      <p class="w3-padding-16 w3-text-light-grey">CUDA is NVIDIA’s parallel computing architecture that enables dramatic increases in computing performance by harnessing the 
+        power of the GPU.This tutorial explains the installation of CUDA 10 in ubuntu 16.04.</p><a href="http://www.rignitc.com/install-cuda-10-with-ubuntu-16-04/"style="color:blue" class="w3-padding-16 w3-text-light-grey">Read more.</a>
       <br>  
-      <a href="http://www.rignitc.com/electronics-behind-camera/", style="color:blue">Electronics Behind Camera.</a> (along with <a href ="">Srinath Namburi</a>)
+      <a href="http://www.rignitc.com/electronics-behind-camera/", style="color:blue" class="w3-padding-16 w3-text-light-grey">Electronics Behind Camera.</a> (along with <a href ="">Srinath Namburi</a>)
       <br>
-      It briefly covers about the internal electronics of a camera with technical effects involved while taking photography.
-      <a href="http://www.rignitc.com/electronics-behind-camera/", style="color:blue">Read more.</a>
-      </div>
-
-      <div id = 'gallery' class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-photo fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Gallery</h2>
-        <h5 class="w3-opacity"><b>Young Innovators Programme</b></h5>
+      <p class="w3-padding-16 w3-text-light-grey">It briefly covers about the internal electronics of a camera with technical effects involved while taking photography.</p>
+      <a href="http://www.rignitc.com/electronics-behind-camera/", style="color:blue" class="w3-padding-16 w3-text-light-grey">Read more.</a>
+    </div>
+    
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Gallery</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <h5 class="w3-opacity"><b>Young Innovators Programme</b></h5>
         <br>
         <img src="images/YIP.jpg" style="width:100%" alt="yip2020">
         <br>
@@ -248,51 +215,51 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <br>
         Introduction to Robotics workshop September 2018 and October 2017.
       </p>
-    
-      
-
-      </div>
-
-<!--   
-        <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Extracurriculars</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>National Institute of Technology Calicut, India.</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2016 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Bachelor of Technology. CGPA (till sixth semester): 8.26 </p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Sri Gayatri Junior College, Hyderabad, India.</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2014 - May 2016</h6>
-          <p>12<sup>th</sup> class.                   Percentage: 96.8%</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Anjali High School, Suryapet, India.</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>passed May 2014</h6>
-          <p>Secondary School Certificate. GPA 9.8//10</p><br>
-        </div>
-      </div> -->
-    <!-- End Right Column -->
+    <!-- End photo grid -->
     </div>
-    
-  <!-- End Grid -->
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> NIT Calicut</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 9177881640</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: harshavardhan.guda@gmail.com</p>
+    </div><br>
+    <p>Lets get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
   </div>
   
-  <!-- End Page Container -->
-</div>
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <a href="https://www.facebook.com/harshavardhan.guda" target="_top"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-  <a href="https://github.com/harshavardhanguda" target="_top"><i class="fa fa-github w3-hover-opacity"></i></a>
-<!--   <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i> -->
-  <a href="https://www.linkedin.com/in/harsha-vardhan-guda/" target="_top"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+<!-- END PAGE CONTENT -->
+</div>
 
 </body>
 </html>
